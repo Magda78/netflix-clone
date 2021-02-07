@@ -1,0 +1,10 @@
+.footer {
+    color: grey;
+    display: flex;
+    padding: 20px;
+}
+
+.footer > p {
+    margin-right: 20px;
+    cursor: pointer;
+}
