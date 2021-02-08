@@ -217,6 +217,7 @@ flex-direction: column;
 color: white;
 padding: 10px;
 margin-left: 40px;
+margin-bottom: 30px;
 flex: 0.8;
 }
 
@@ -248,3 +249,82 @@ flex: 0.8;
     left: 75px;
     top: 30px;
 }
+
+.loginScreen__questions {
+    padding: 50px 200px 50px 200px;
+    background-color: black;
+}
+
+.loginScreen__questions > h1{
+    color: white;
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 50px;
+}
+
+.loginScreen__footer {
+    padding: 50px 200px 50px 200px;
+    background-color: black;
+}
+
+.loginScreen__footer > h4 {
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.loginScreen__footerPhone:hover {
+    text-decoration: underline;
+}
+
+.loginScreen__footerSections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginscreen__footerSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginscreen__footerSection > h5 {
+    color: grey;
+    line-height: 1.5rem;
+}
+
+.loginscreen__footerSection > h5:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 950px) {
+    .loginScreen__option1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .loginScreen__option1__info {
+        text-align: center;
+    }
+    .loginScreen__option2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .loginScreen__option2__info {
+        margin-right: 0px;
+    margin-top: 20px;
+    text-align: center;
+    }
+    .loginScreen__option3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .loginScreen__option3__info {
+        text-align: center;
+    }
+    .loginScreen__questions {
+        padding: 20px;
+    }
+    .loginScreen__footer {
+        padding: 20px;
+    font-size: small;
+    }
+  }

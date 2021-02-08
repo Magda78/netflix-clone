@@ -19,7 +19,7 @@ function SignInScreen() {
 	};
 
 	const signIn = (e) => {
-        auth
+		auth
 			.signInWithEmailAndPassword(emailRef.current.value, passwordRef.current.value)
 			.then((authUser) => {
 				console.log(authUser);
