@@ -3,7 +3,7 @@ import './App.css';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { auth } from './firebase';
+import { auth } from './screens/firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, login, selectUser } from './features/userSlice';
 import ProfileScreen from './screens/ProfileScreen'

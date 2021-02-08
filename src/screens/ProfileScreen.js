@@ -3,7 +3,7 @@ import './ProfileScreen.css';
 import Nav from '../Nav';
 import { selectUser } from '../features/userSlice';
 import { useSelector } from 'react-redux';
-import { auth } from '../firebase';
+import { auth } from './firebase';
 
 function ProfileScreen() {
 	const user = useSelector(selectUser);

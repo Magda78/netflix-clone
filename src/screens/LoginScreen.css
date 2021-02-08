@@ -1,6 +1,7 @@
 .loginScreen {
     position: relative;
-    height: 100%;
+    height: 80vh;
+    border-bottom: 8px solid #222;
     background: url('https://assets.nflxext.com/ffe/siteui/vlv3/538717c0-f271-40e9-a99e-b07f9c521322/785c7470-5017-4447-8845-b7eeaa9f2070/US-en-20210201-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
 }
 
@@ -57,7 +58,7 @@ font-weight: 400;;
 .loginScreen__gradient {
     width: 100%;
     z-index: 1;
-    height: 100vh;
+    height: 80vh;
     background: rgba(0,0,0,0.4);
     background-image: linear-gradient(
         to top,
@@ -88,4 +89,162 @@ font-weight: 400;;
     border: none;
     font-weight: 600;
     cursor: pointer;
+}
+
+.loginScreen__options {
+    background-color: black;
+    padding-top: 50px;
+}
+
+.loginScreen__option1 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    border-bottom: 8px solid #222;
+}
+
+.loginScreen__option1__info {
+display: flex;
+flex-direction: column;
+color: white;
+padding: 10px;
+margin-left: 40px;
+flex: 0.8;
+}
+
+.loginScreen__option1__info > h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.loginScreen__option1__info > h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.loginScreen__option1__pic {
+    position: relative;
+}
+
+.loginScreen__option1__picSize {
+    width: 400px;
+    height: auto;
+}
+
+.loginScreen_option1_video {
+    position: absolute;
+    width: 270px;
+    left: 55px;
+    top: 70px;
+}
+
+.loginScreen__option2 {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    border-bottom: 8px solid #222;
+}
+
+.loginScreen__option2__info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    margin-right: 40px;
+    flex: 1;
+}
+
+.loginScreen__option2__info > h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.loginScreen__option2__info > h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.loginScreen__option2__pic > img {
+    width: 100%;
+    margin-right: -60px;
+}
+
+.loginScreen__option2__text {
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+}
+
+.loginScreen__option2__picSize2Text {
+    display: flex;
+    color: white;
+}
+
+.loginScreen__option2__pic {
+    position: relative;
+    width: 40%;
+    margin-left: -60px;
+}
+
+.loginScreen__option2__text > h4 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.loginScreen__option2__text > h5 {
+    color: blue;
+}
+
+.loginScreen__option3 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    justify-content: space-between;
+    border-bottom: 8px solid #222;
+}
+
+.loginScreen__option3__info {
+display: flex;
+flex-direction: column;
+color: white;
+padding: 10px;
+margin-left: 40px;
+flex: 0.8;
+}
+
+.loginScreen__option3__info > h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+.loginScreen__option3__info > h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.loginScreen__option3__pic {
+    position: relative;
+    margin-right: 25px;
+}
+
+.loginScreen__option3__picSize {
+    width: 400px;
+    height: auto;
+}
+
+.loginScreen_option3_video {
+    position: absolute;
+    width: 250px;
+    left: 75px;
+    top: 30px;
 }
