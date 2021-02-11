@@ -12,7 +12,7 @@ const API_KEY = "5fccd529a8719ecb7be9ff9e9ceed81c";
 
 const Row = forwardRef(({ title, fetchUrl, isLargeRow = false }, ref) => {
 	const [ movies, setMovies ] = useState([]);
-	const [ trailerUrl, setTrailerUrl ] = useState(' ');
+	const [ trailerUrl, setTrailerUrl ] = useState("");
 	const [open, setOpen] = useState(false)
 	useEffect(
 		() => {

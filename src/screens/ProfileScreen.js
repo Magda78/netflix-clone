@@ -1,12 +1,15 @@
 import React from 'react';
 import './ProfileScreen.css';
 import Nav from '../Nav';
-import { selectUser } from '../features/userSlice';
+import { selectUser, selectSubscriptionDate } from '../features/userSlice';
 import { useSelector } from 'react-redux';
 import { auth } from './firebase';
+import PlanScreen from './PlanScreen';
 
 function ProfileScreen() {
 	const user = useSelector(selectUser);
+	const renevalDate = useSelector(selectSubscriptionDate);
+    
 	return (
 		<div className="profileScreen">
 			<Nav />
@@ -20,18 +23,17 @@ function ProfileScreen() {
 					<div className="profileScreen__details">
 						<h2>{user.email}</h2>
 						<div className="profileScreen__plans">
-                            <h3>
-                                Plans
-                            </h3>
-                            <p></p>
-							<button onClick={() => auth.signOut()} className="profileScreen__signOut">
-								SignOut
-							</button>
+							<h3>Plans</h3>
+							<p>Renewal date: {renevalDate}</p>
+							<PlanScreen />
+								<button onClick={() => auth.signOut()} className="profileScreen__signOut">
+									SignOut
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	);
 }
 
